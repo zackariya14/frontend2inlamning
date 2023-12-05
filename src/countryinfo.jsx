@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 
-function CountryInfo({country, showInfo, onToggleInfo}){
+function Countryinfo({country, showInfo, onToggleInfo}){
     return(
         <div className="container">
             <img src={country.flags && country.flags.svg} 
@@ -18,4 +18,4 @@ function CountryInfo({country, showInfo, onToggleInfo}){
         </div>
     )
 }
-export default CountryInfo
+export default Countryinfo

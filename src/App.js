@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import ContinentSelect from './Continentselect.jsx';
-import CountryInfo from './countryinfo.jsx';
+import Countryinfo from './Countryinfo.jsx';
 
 function App() {
   const [selectedContinent, setSelectedContinent] = useState('');
@@ -34,7 +34,7 @@ function App() {
       <ContinentSelect onSelectContinent={handleContinentSelect} />
       <div className='flag-grid'>
         {countries.map((country) => (
-          <CountryInfo
+          <Countryinfo
           style={{cursor: 'pointer'}}
           key={country.cca2}
             country={country}
